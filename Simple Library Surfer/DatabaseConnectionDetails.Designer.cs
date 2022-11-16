@@ -50,8 +50,8 @@
             this.ClearFormButton.FlatAppearance.BorderSize = 0;
             this.ClearFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearFormButton.Image = global::Simple_Library_Surfer.Properties.Resources.Clear_Form;
-            this.ClearFormButton.Location = new System.Drawing.Point(411, 313);
-            this.ClearFormButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClearFormButton.Location = new System.Drawing.Point(410, 321);
+            this.ClearFormButton.Margin = new System.Windows.Forms.Padding(2);
             this.ClearFormButton.Name = "ClearFormButton";
             this.ClearFormButton.Size = new System.Drawing.Size(38, 30);
             this.ClearFormButton.TabIndex = 5;
@@ -65,7 +65,7 @@
             this.SaveButton.FlatAppearance.BorderSize = 0;
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(148, 311);
+            this.SaveButton.Location = new System.Drawing.Point(147, 319);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(87, 30);
             this.SaveButton.TabIndex = 4;
@@ -78,7 +78,7 @@
             this.UserNameTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UserNameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserNameTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameTB.Location = new System.Drawing.Point(251, 204);
+            this.UserNameTB.Location = new System.Drawing.Point(250, 212);
             this.UserNameTB.Name = "UserNameTB";
             this.UserNameTB.Size = new System.Drawing.Size(198, 24);
             this.UserNameTB.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.DatabaseNameTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DatabaseNameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DatabaseNameTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DatabaseNameTB.Location = new System.Drawing.Point(251, 148);
+            this.DatabaseNameTB.Location = new System.Drawing.Point(250, 156);
             this.DatabaseNameTB.Name = "DatabaseNameTB";
             this.DatabaseNameTB.Size = new System.Drawing.Size(198, 24);
             this.DatabaseNameTB.TabIndex = 1;
@@ -98,7 +98,7 @@
             this.ServerNameTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ServerNameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ServerNameTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServerNameTB.Location = new System.Drawing.Point(251, 92);
+            this.ServerNameTB.Location = new System.Drawing.Point(250, 100);
             this.ServerNameTB.Name = "ServerNameTB";
             this.ServerNameTB.Size = new System.Drawing.Size(198, 24);
             this.ServerNameTB.TabIndex = 0;
@@ -108,7 +108,7 @@
             this.DatabaseNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DatabaseNameLabel.AutoSize = true;
             this.DatabaseNameLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DatabaseNameLabel.Location = new System.Drawing.Point(34, 140);
+            this.DatabaseNameLabel.Location = new System.Drawing.Point(33, 148);
             this.DatabaseNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DatabaseNameLabel.Name = "DatabaseNameLabel";
             this.DatabaseNameLabel.Size = new System.Drawing.Size(201, 32);
@@ -120,7 +120,7 @@
             this.ServerNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ServerNameLabel.AutoSize = true;
             this.ServerNameLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServerNameLabel.Location = new System.Drawing.Point(60, 84);
+            this.ServerNameLabel.Location = new System.Drawing.Point(59, 92);
             this.ServerNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ServerNameLabel.Name = "ServerNameLabel";
             this.ServerNameLabel.Size = new System.Drawing.Size(175, 32);
@@ -132,7 +132,7 @@
             this.ProjectTitleLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ProjectTitleLabel.Font = new System.Drawing.Font("AR DARLING", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ProjectTitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.ProjectTitleLabel.Location = new System.Drawing.Point(-43, 0);
             this.ProjectTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProjectTitleLabel.Name = "ProjectTitleLabel";
             this.ProjectTitleLabel.Size = new System.Drawing.Size(600, 48);
@@ -145,7 +145,7 @@
             this.UserNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UserNameLabel.AutoSize = true;
             this.UserNameLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLabel.Location = new System.Drawing.Point(82, 196);
+            this.UserNameLabel.Location = new System.Drawing.Point(81, 204);
             this.UserNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserNameLabel.Name = "UserNameLabel";
             this.UserNameLabel.Size = new System.Drawing.Size(153, 32);
@@ -157,7 +157,7 @@
             this.PasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(104, 252);
+            this.PasswordLabel.Location = new System.Drawing.Point(103, 260);
             this.PasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(131, 32);
@@ -169,7 +169,7 @@
             this.PasswordTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswordTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTB.Location = new System.Drawing.Point(251, 260);
+            this.PasswordTB.Location = new System.Drawing.Point(250, 268);
             this.PasswordTB.Name = "PasswordTB";
             this.PasswordTB.Size = new System.Drawing.Size(198, 24);
             this.PasswordTB.TabIndex = 3;
@@ -179,7 +179,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(514, 369);
+            this.ControlBox = false;
             this.Controls.Add(this.ClearFormButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.PasswordTB);
@@ -191,9 +192,11 @@
             this.Controls.Add(this.DatabaseNameLabel);
             this.Controls.Add(this.ServerNameLabel);
             this.Controls.Add(this.ProjectTitleLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "DatabaseConnectionDetails";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

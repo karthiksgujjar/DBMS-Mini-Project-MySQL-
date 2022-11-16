@@ -48,6 +48,8 @@ namespace Simple_Library_Surfer
                         if (res > 0)
                         {
                             MessageBox.Show("Inserted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearFormButton_Click(sender, e);
+                            NameTB.Focus();
                         }
                         else
                         {
@@ -76,9 +78,10 @@ namespace Simple_Library_Surfer
         }
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
-            NameTB.Text = null;
-            AuthorTB.Text=null;
-            IdTB.Text=null;
+            NameTB.Clear();
+            AuthorTB.Clear();
+            IdTB.Clear();
+            NameTB.Focus();
         }
     }
 }

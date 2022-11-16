@@ -53,6 +53,8 @@ namespace Simple_Library_Surfer
                         if (res > 0)
                         {
                             MessageBox.Show("Updated Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearFormButton_Click(sender, e);
+                            NameTB.Focus();
                         }
                         else
                         {
@@ -80,10 +82,11 @@ namespace Simple_Library_Surfer
         }
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
-            NameTB.Text = null;
-            AuthorTB.Text = null;
-            CurrentIdTB.Text = null;
-            NewIdTB.Text = null;
+            NameTB.Clear();
+            AuthorTB.Clear();
+            CurrentIdTB.Clear();
+            NewIdTB.Clear();
+            NameTB.Focus();
         }
     }
 }

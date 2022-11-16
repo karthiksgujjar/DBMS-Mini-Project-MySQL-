@@ -45,6 +45,8 @@ namespace Simple_Library_Surfer
                         if (res > 0)
                         {
                             MessageBox.Show("Deleted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearFormButton_Click(sender, e);
+                            IdTB.Focus();
                         }
                         else
                         {
@@ -66,7 +68,8 @@ namespace Simple_Library_Surfer
         }
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
-            IdTB.Text = null;
+            IdTB.Clear();
+            IdTB.Focus();
         }
         private void MasterDeleteButton_Click(object sender, EventArgs e)
         {
@@ -87,6 +90,8 @@ namespace Simple_Library_Surfer
                     if (res > 0)
                     {
                         MessageBox.Show("Deleted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearFormButton_Click(sender, e);
+                        IdTB.Focus();
                     }
                     else
                     {
