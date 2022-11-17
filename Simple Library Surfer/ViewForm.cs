@@ -21,6 +21,7 @@ using iText.Kernel.Geom;
 using System.Collections;
 using MySql.Data.MySqlClient;
 using System.IO;
+using System.Diagnostics;
 
 namespace Simple_Library_Surfer
 {
@@ -94,6 +95,7 @@ namespace Simple_Library_Surfer
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.FileName = "Report";
             sfd.DefaultExt = ".pdf";
+            sfd.Filter = "(*.pdf)|*.pdf";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 PdfWriter writer = new PdfWriter(sfd.FileName);
@@ -154,6 +156,7 @@ namespace Simple_Library_Surfer
                     doc.Add(PdfTable);
                     doc.Close();
                     MessageBox.Show("Report Successfully Generated!!","SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    Process.Start(sfd.FileName);
                 }
                 catch (Exception Err)
                 {

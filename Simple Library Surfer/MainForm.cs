@@ -43,18 +43,19 @@ namespace Simple_Library_Surfer
         {
             string constring = File.ReadAllText("DBConnect.dat");
             MySqlConnection con = new MySqlConnection(constring);
-            string query = "SELECT * FROM Library";
+            string query = "SELECT count(*) FROM Library";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
             try
             {
                 con.Open();
-                MySqlDataReader DataCount = cmd.ExecuteReader();
+                /*  MySqlDataReader DataCount = cmd.ExecuteReader();
 
-                int Count = 0;
-                while (DataCount.Read())
-                    Count++;
-
+                  int Count = 0;
+                  while (DataCount.Read())
+                      Count++;
+  */
+                int Count = Convert.ToInt32(cmd.ExecuteScalar());
                 TotalBooksCountLabel.Text = Count.ToString();
             }
             catch (Exception Err)
