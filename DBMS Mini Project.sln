@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Library Surfer", "Si
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SLS Installer", "SLS Installer\SLS Installer.vdproj", "{2E566C73-C98D-4DAA-A8F2-E155F7BB7648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Library Surfer using Metro Framework", "Simple Library Surfer using Metro Framework\Simple Library Surfer using Metro Framework.csproj", "{D6D3E724-C4D2-41D1-8A8A-017B66096969}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,10 +19,6 @@ Global
 		{ED948804-C3DA-4CE4-8B1D-77B9B85D4AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2E566C73-C98D-4DAA-A8F2-E155F7BB7648}.Debug|Any CPU.ActiveCfg = Debug
 		{2E566C73-C98D-4DAA-A8F2-E155F7BB7648}.Release|Any CPU.ActiveCfg = Release
-		{D6D3E724-C4D2-41D1-8A8A-017B66096969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6D3E724-C4D2-41D1-8A8A-017B66096969}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6D3E724-C4D2-41D1-8A8A-017B66096969}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6D3E724-C4D2-41D1-8A8A-017B66096969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
