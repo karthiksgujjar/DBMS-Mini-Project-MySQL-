@@ -19,10 +19,11 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            string constring = File.ReadAllText("DBConnect.dat");
-            MySqlConnection con = new MySqlConnection(constring);
+            //string constring = File.ReadAllText("DBConnect.dat");
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "DELETE FROM Library WHERE id = @IdOfBook";
             MySqlCommand cmd = new MySqlCommand(query, con);
             
@@ -66,18 +67,20 @@ namespace Simple_Library_Surfer
                 MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
             IdTB.Clear();
             IdTB.Focus();
         }
+
         private void MasterDeleteButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("This Action cannot be reversed\nDo you really want to DELETE EVERYTHING?", "CONFIRMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,MessageBoxDefaultButton.Button2);
             if (result == DialogResult.Yes)
             {
-                string constring = File.ReadAllText("DBConnect.dat");
-                MySqlConnection con = new MySqlConnection(constring);
+               // string constring = File.ReadAllText("DBConnect.dat");
+                MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                 string query = "DELETE FROM Library";
                 MySqlCommand cmd = new MySqlCommand(query, con);
 

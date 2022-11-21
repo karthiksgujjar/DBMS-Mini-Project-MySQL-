@@ -19,11 +19,12 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
+
         private void InsertButton_Click(object sender, EventArgs e)
         {
             
-            string constring = File.ReadAllText("DBConnect.dat");
-            MySqlConnection con = new MySqlConnection(constring);
+            //string constring = File.ReadAllText("DBConnect.dat");
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "INSERT INTO Library values(@NameOfBook,@AuthorOfBook,@IdOfBook)";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
@@ -76,6 +77,7 @@ namespace Simple_Library_Surfer
                 }
             }
         }
+
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
             NameTB.Clear();

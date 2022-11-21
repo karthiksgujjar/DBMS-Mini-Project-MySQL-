@@ -31,10 +31,11 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
+
         private void ViewForm_Load(object sender, EventArgs e)
         {
-            string constring = File.ReadAllText("DBConnect.dat");
-            MySqlConnection con = new MySqlConnection(constring);
+            //string constring = Properties.Settings.Default.constring;
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "SELECT * FROM Library";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
@@ -82,6 +83,7 @@ namespace Simple_Library_Surfer
                 MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         static void LabelPropertiesSet(Label x)
         {
             x.AutoSize = true;
@@ -128,8 +130,8 @@ namespace Simple_Library_Surfer
 
                 try
                 {
-                    string constring = File.ReadAllText("DBConnect.dat");
-                    MySqlConnection con = new MySqlConnection(constring);
+                    //string constring = File.ReadAllText("DBConnect.dat");
+                    MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                     string query = "SELECT * FROM Library";
                     MySqlCommand cmd = new MySqlCommand(query, con);
 

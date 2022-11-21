@@ -19,30 +19,35 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
+
         private void InsertButton_Click(object sender, EventArgs e)
         {
             InsertForm insertForm = new InsertForm();
             insertForm.ShowDialog();
         }
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DeleteForm deleteForm = new DeleteForm();
             deleteForm.ShowDialog();
         }
+
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             UpdateForm updateForm = new UpdateForm();
             updateForm.ShowDialog();
         }
+
         private void ViewButton_Click(object sender, EventArgs e)
         {
             ViewForm viewForm = new ViewForm();
             viewForm.ShowDialog();
         }
+
         private void BooksCountUpdate_OnFormActivation(object sender, EventArgs e)
         {
-            string constring = File.ReadAllText("DBConnect.dat");
-            MySqlConnection con = new MySqlConnection(constring);
+            //string constring = File.ReadAllText("DBConnect.dat");
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "SELECT count(*) FROM Library";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
@@ -61,16 +66,7 @@ namespace Simple_Library_Surfer
             catch (Exception Err)
             {
                 MessageBox.Show("Invalid Database Connection Details.\nPlease Re-Enter Database Connection details for the Application to Run.\n\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                DatabaseConnectionDetails getDBDetails = new DatabaseConnectionDetails();
-                getDBDetails.ShowDialog();
-            }
-        }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            if (!File.Exists("DBConnect.dat"))
-            {
-                MessageBox.Show("DBConnect.dat File Not Found\nPlease Enter Database Connection details for the Application to Run.","FILE NOT FOUND ERROR",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 DatabaseConnectionDetails getDBDetails = new DatabaseConnectionDetails();
                 getDBDetails.ShowDialog();
             }

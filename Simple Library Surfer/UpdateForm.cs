@@ -19,14 +19,11 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
-        private void UpdateForm_Load(object sender, EventArgs e)
-        {
 
-        }
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            string constring = File.ReadAllText("DBConnect.dat");
-            MySqlConnection con = new MySqlConnection(constring);
+            //string constring = File.ReadAllText("DBConnect.dat");
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "UPDATE Library SET name=@NameOfBook,author=@AuthorOfBook,id=@NewIdOfBook WHERE id=@CurrentIdOfBook";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
@@ -80,6 +77,7 @@ namespace Simple_Library_Surfer
                 }
             }
         }
+
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
             NameTB.Clear();
