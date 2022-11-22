@@ -37,7 +37,11 @@ namespace Simple_Library_Surfer
                 {
                     try
                     {
-                        Convert.ToInt32(IdTB.Text);
+                        if(!(Convert.ToInt32(IdTB.Text)>0))
+                        {
+                            throw new FormatException();
+                        }
+                        
                         cmd.Parameters.AddWithValue("@NameOfBook", NameTB.Text);
                         cmd.Parameters.AddWithValue("@AuthorOfBook", AuthorTB.Text);
                         cmd.Parameters.AddWithValue("@IdOfBook", IdTB.Text);
@@ -59,7 +63,7 @@ namespace Simple_Library_Surfer
                     }
                     catch(FormatException)
                     {
-                        MessageBox.Show("Enter only Numbers in ID Field\n", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Enter only Positive Numbers in ID Field\n", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
