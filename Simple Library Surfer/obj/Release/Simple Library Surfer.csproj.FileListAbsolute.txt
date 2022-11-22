@@ -67,7 +67,6 @@ E:\DBMS Mini Project MySQL\Simple Library Surfer\bin\Release\System.Threading.Ta
 E:\DBMS Mini Project MySQL\Simple Library Surfer\bin\Release\System.ValueTuple.xml
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.csproj.AssemblyReference.cache
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.csproj.SuggestedBindingRedirects.cache
-E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.DatabaseConnectionDetails.resources
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.DeleteForm.resources
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.InsertForm.resources
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.MainForm.resources
@@ -79,3 +78,4 @@ E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surf
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.csproj.CopyComplete
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.exe
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.pdb
+E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.GetDBDetails.resources

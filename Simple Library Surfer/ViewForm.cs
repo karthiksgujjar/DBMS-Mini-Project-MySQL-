@@ -109,18 +109,24 @@ namespace Simple_Library_Surfer
 
                 Paragraph Title = new Paragraph("SIMPLE LIBRARY SURFER").SetFont(BoldItalic).SetTextAlignment(TextAlignment.CENTER).SetFontSize(30).SetFontColor(ColorConstants.ORANGE);
                 doc.Add(Title);
+
                 Paragraph SubTitle = new Paragraph("-- ALL BOOKS IN THE LIBRARY --").SetFont(BoldItalic).SetTextAlignment(TextAlignment.CENTER).SetFontSize(15).SetBold();
                 doc.Add(SubTitle);
+
                 LineSeparator ls = new LineSeparator(new SolidLine());
                 doc.Add(ls);
+
                 Paragraph NewLine = new Paragraph("\n");
                 doc.Add(NewLine);
 
                 Table PdfTable = new Table(4, true);
 
-                Cell RTSlNo = new Cell(1, 1).SetFont(BoldItalic).SetBackgroundColor(ColorConstants.DARK_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph("Sl. No."));
+                Cell RTSlNo = new Cell(1,1).SetFont(BoldItalic).SetBackgroundColor(ColorConstants.DARK_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph("Sl. No."));
+
                 Cell RTName = new Cell(1, 1).SetFont(BoldItalic).SetBackgroundColor(ColorConstants.DARK_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph("Name of Book"));
+
                 Cell RTAuthor = new Cell(1, 1).SetFont(BoldItalic).SetBackgroundColor(ColorConstants.DARK_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph("Author of Book"));
+
                 Cell RTID = new Cell(1, 1).SetFont(BoldItalic).SetBackgroundColor(ColorConstants.DARK_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph("ID"));
 
                 PdfTable.AddCell(RTSlNo);

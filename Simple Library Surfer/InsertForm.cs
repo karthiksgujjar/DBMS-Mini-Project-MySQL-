@@ -20,9 +20,8 @@ namespace Simple_Library_Surfer
             InitializeComponent();
         }
 
-        private void InsertButton_Click(object sender, EventArgs e)
+        private void InsertButton_Click(object sender, EventArgs e) 
         {
-            
             //string constring = File.ReadAllText("DBConnect.dat");
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "INSERT INTO Library values(@NameOfBook,@AuthorOfBook,@IdOfBook)";
@@ -50,7 +49,6 @@ namespace Simple_Library_Surfer
                         {
                             MessageBox.Show("Inserted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             ClearFormButton_Click(sender, e);
-                            NameTB.Focus();
                         }
                         else
                         {

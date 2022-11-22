@@ -47,6 +47,7 @@ namespace Simple_Library_Surfer
         private void BooksCountUpdate_OnFormActivation(object sender, EventArgs e)
         {
             //string constring = File.ReadAllText("DBConnect.dat");
+            
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "SELECT count(*) FROM Library";
             MySqlCommand cmd = new MySqlCommand(query, con);
@@ -56,10 +57,10 @@ namespace Simple_Library_Surfer
                 con.Open();
                 /*  MySqlDataReader DataCount = cmd.ExecuteReader();
 
-                  int Count = 0;
-                  while (DataCount.Read())
-                      Count++;
-  */
+                    int Count = 0;
+                    while (DataCount.Read())
+                        Count++;
+    */
                 int Count = Convert.ToInt32(cmd.ExecuteScalar());
                 TotalBooksCountLabel.Text = Count.ToString();
             }
@@ -67,9 +68,12 @@ namespace Simple_Library_Surfer
             {
                 MessageBox.Show("Invalid Database Connection Details.\nPlease Re-Enter Database Connection details for the Application to Run.\n\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                DatabaseConnectionDetails getDBDetails = new DatabaseConnectionDetails();
-                getDBDetails.ShowDialog();
+                GetDBDetails dBDetails = new GetDBDetails();
+                dBDetails.ShowDialog();
             }
+            
+            
         }
+
     }
 }

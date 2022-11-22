@@ -51,7 +51,6 @@ namespace Simple_Library_Surfer
                         {
                             MessageBox.Show("Updated Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             ClearFormButton_Click(sender, e);
-                            NameTB.Focus();
                         }
                         else
                         {

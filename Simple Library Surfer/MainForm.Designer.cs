@@ -46,8 +46,9 @@
             this.ProjectTitleLabel.Font = new System.Drawing.Font("AR DARLING", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ProjectTitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.ProjectTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProjectTitleLabel.Name = "ProjectTitleLabel";
-            this.ProjectTitleLabel.Size = new System.Drawing.Size(800, 59);
+            this.ProjectTitleLabel.Size = new System.Drawing.Size(600, 48);
             this.ProjectTitleLabel.TabIndex = 0;
             this.ProjectTitleLabel.Text = "SIMPLE LIBRARY SURFER";
             this.ProjectTitleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -57,9 +58,10 @@
             this.TotalTextLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalTextLabel.AutoSize = true;
             this.TotalTextLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTextLabel.Location = new System.Drawing.Point(169, 118);
+            this.TotalTextLabel.Location = new System.Drawing.Point(127, 96);
+            this.TotalTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalTextLabel.Name = "TotalTextLabel";
-            this.TotalTextLabel.Size = new System.Drawing.Size(436, 40);
+            this.TotalTextLabel.Size = new System.Drawing.Size(346, 32);
             this.TotalTextLabel.TabIndex = 1;
             this.TotalTextLabel.Text = "- Total Books in the Library -";
             // 
@@ -69,11 +71,12 @@
             this.TotalBooksCountLabel.AutoSize = true;
             this.TotalBooksCountLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalBooksCountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TotalBooksCountLabel.Location = new System.Drawing.Point(365, 167);
+            this.TotalBooksCountLabel.Location = new System.Drawing.Point(274, 136);
+            this.TotalBooksCountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalBooksCountLabel.Name = "TotalBooksCountLabel";
-            this.TotalBooksCountLabel.Size = new System.Drawing.Size(68, 40);
+            this.TotalBooksCountLabel.Size = new System.Drawing.Size(27, 32);
             this.TotalBooksCountLabel.TabIndex = 1;
-            this.TotalBooksCountLabel.Text = "000";
+            this.TotalBooksCountLabel.Text = "0";
             // 
             // DeleteButton
             // 
@@ -81,10 +84,10 @@
             this.DeleteButton.FlatAppearance.BorderSize = 0;
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Image = global::Simple_Library_Surfer.Properties.Resources.Delete;
-            this.DeleteButton.Location = new System.Drawing.Point(72, 322);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeleteButton.Location = new System.Drawing.Point(54, 262);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(51, 47);
+            this.DeleteButton.Size = new System.Drawing.Size(38, 38);
             this.DeleteButton.TabIndex = 1;
             this.MainFormToolTip.SetToolTip(this.DeleteButton, "DELETE");
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -96,10 +99,10 @@
             this.ViewButton.FlatAppearance.BorderSize = 0;
             this.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewButton.Image = global::Simple_Library_Surfer.Properties.Resources.View;
-            this.ViewButton.Location = new System.Drawing.Point(680, 322);
-            this.ViewButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewButton.Location = new System.Drawing.Point(510, 262);
+            this.ViewButton.Margin = new System.Windows.Forms.Padding(2);
             this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(51, 47);
+            this.ViewButton.Size = new System.Drawing.Size(38, 38);
             this.ViewButton.TabIndex = 3;
             this.MainFormToolTip.SetToolTip(this.ViewButton, "VIEW");
             this.ViewButton.UseVisualStyleBackColor = true;
@@ -111,10 +114,10 @@
             this.UpdateButton.FlatAppearance.BorderSize = 0;
             this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateButton.Image = global::Simple_Library_Surfer.Properties.Resources.Update;
-            this.UpdateButton.Location = new System.Drawing.Point(680, 207);
-            this.UpdateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UpdateButton.Location = new System.Drawing.Point(510, 168);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(51, 47);
+            this.UpdateButton.Size = new System.Drawing.Size(38, 38);
             this.UpdateButton.TabIndex = 2;
             this.MainFormToolTip.SetToolTip(this.UpdateButton, "UPDATE");
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -126,10 +129,10 @@
             this.InsertButton.FlatAppearance.BorderSize = 0;
             this.InsertButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InsertButton.Image = global::Simple_Library_Surfer.Properties.Resources.Insert;
-            this.InsertButton.Location = new System.Drawing.Point(72, 207);
-            this.InsertButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.InsertButton.Location = new System.Drawing.Point(54, 168);
+            this.InsertButton.Margin = new System.Windows.Forms.Padding(2);
             this.InsertButton.Name = "InsertButton";
-            this.InsertButton.Size = new System.Drawing.Size(51, 47);
+            this.InsertButton.Size = new System.Drawing.Size(38, 38);
             this.InsertButton.TabIndex = 0;
             this.MainFormToolTip.SetToolTip(this.InsertButton, "INSERT");
             this.InsertButton.UseVisualStyleBackColor = true;
@@ -137,10 +140,10 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.ViewButton);
             this.Controls.Add(this.UpdateButton);
@@ -150,7 +153,7 @@
             this.Controls.Add(this.ProjectTitleLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "S L S ";
