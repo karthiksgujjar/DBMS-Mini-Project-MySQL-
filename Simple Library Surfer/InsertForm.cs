@@ -61,7 +61,7 @@ namespace Simple_Library_Surfer
 
                         con.Close();
                     }
-                    catch(FormatException)
+                    catch (FormatException)
                     {
                         MessageBox.Show("Enter only Positive Numbers in ID Field\n", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
