@@ -172,5 +172,105 @@ namespace Simple_Library_Surfer
                 }
             }
         }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            SearchTextBox.Visible = true;
+            SearchTextBox.Focus();
+        }
+
+        private void SearchTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13 && !string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                e.Handled = true;
+                MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+                string query = "SELECT * FROM Library";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+
+                SearchedDataTable.Controls.Clear();
+
+                try
+                {
+                    con.Open();
+                    MySqlDataReader SeacrhedLibraryData = cmd.ExecuteReader();
+
+                    int Count = 0;
+
+                    Label SlNoTitleLabel = new Label();
+                    SlNoTitleLabel.Text = "Sl. No.";
+                    LabelPropertiesSet(SlNoTitleLabel);
+                    SlNoTitleLabel.Font = new Font("Comic Sans MS", 12, FontStyle.Bold | FontStyle.Italic);
+                    SearchedDataTable.Controls.Add(SlNoTitleLabel, 0, Count);
+
+                    Label NameTitleLabel = new Label();
+                    NameTitleLabel.Text = "Book's Name";
+                    LabelPropertiesSet(NameTitleLabel);
+                    NameTitleLabel.Font = new Font("Comic Sans MS", 12, FontStyle.Bold | FontStyle.Italic);
+                    SearchedDataTable.Controls.Add(NameTitleLabel, 1, Count);
+
+                    Label AuthorTitleLabel = new Label();
+                    AuthorTitleLabel.Text = "Author's Name";
+                    LabelPropertiesSet(AuthorTitleLabel);
+                    AuthorTitleLabel.Font = new Font("Comic Sans MS", 12, FontStyle.Bold | FontStyle.Italic);
+                    SearchedDataTable.Controls.Add(AuthorTitleLabel, 2, Count);
+
+                    Label IdTitleLabel = new Label();
+                    IdTitleLabel.Text = "ID";
+                    LabelPropertiesSet(IdTitleLabel);
+                    IdTitleLabel.Font = new Font("Comic Sans MS", 12, FontStyle.Bold | FontStyle.Italic);
+                    SearchedDataTable.Controls.Add(IdTitleLabel, 3, Count);
+
+                    while (SeacrhedLibraryData.Read())
+                    {
+                        if (SeacrhedLibraryData["name"].ToString().Contains(SearchTextBox.Text) || SeacrhedLibraryData["author"].ToString().Contains(SearchTextBox.Text) || SeacrhedLibraryData["id"].ToString().Contains(SearchTextBox.Text))
+                        {
+                            Count++;
+
+                            SearchedDataTable.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+                            SearchedDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 60F));
+                            SearchedDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
+                            SearchedDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
+
+                            Label slno = new Label();
+                            slno.Text = Count.ToString();
+                            LabelPropertiesSet(slno);
+                            SearchedDataTable.Controls.Add(slno, 0, Count);
+
+                            Label name = new Label();
+                            name.Text = SeacrhedLibraryData["name"].ToString();
+                            LabelPropertiesSet(name);
+                            SearchedDataTable.Controls.Add(name, 1, Count);
+
+                            Label author = new Label();
+                            author.Text = SeacrhedLibraryData["author"].ToString();
+                            LabelPropertiesSet(author);
+                            SearchedDataTable.Controls.Add(author, 2, Count);
+
+                            Label id = new Label();
+                            id.Text = SeacrhedLibraryData["id"].ToString();
+                            LabelPropertiesSet(id);
+                            SearchedDataTable.Controls.Add(id, 3, Count);
+                        }
+                    }
+                    con.Close();
+                    LibraryDataTable.Hide();
+                    SearchedDataTable.Visible = true;
+                }
+                catch (Exception Err)
+                {
+                    MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else if(e.KeyChar == 13 && string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                e.Handled = true;
+                LibraryDataTable.Show();
+                SearchedDataTable.Visible = false;
+                SearchTextBox.Visible = false;
+            }
+            
+        }
     }
 }
