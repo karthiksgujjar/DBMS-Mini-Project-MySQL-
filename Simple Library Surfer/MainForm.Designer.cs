@@ -33,19 +33,22 @@
             this.ProjectTitleLabel = new System.Windows.Forms.Label();
             this.TotalTextLabel = new System.Windows.Forms.Label();
             this.TotalBooksCountLabel = new System.Windows.Forms.Label();
+            this.MainFormToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.DeleteButton = new System.Windows.Forms.Button();
             this.ViewButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.InsertButton = new System.Windows.Forms.Button();
-            this.MainFormToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.FormCloseButton = new System.Windows.Forms.Button();
+            this.FormMinimizeButton = new System.Windows.Forms.Button();
+            this.SLSHeaderLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ProjectTitleLabel
             // 
             this.ProjectTitleLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ProjectTitleLabel.Font = new System.Drawing.Font("AR DARLING", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProjectTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ProjectTitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.ProjectTitleLabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.ProjectTitleLabel.Location = new System.Drawing.Point(0, 27);
             this.ProjectTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProjectTitleLabel.Name = "ProjectTitleLabel";
             this.ProjectTitleLabel.Size = new System.Drawing.Size(600, 48);
@@ -82,6 +85,7 @@
             // 
             this.DeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DeleteButton.FlatAppearance.BorderSize = 0;
+            this.DeleteButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Image = global::Simple_Library_Surfer.Properties.Resources.Delete;
             this.DeleteButton.Location = new System.Drawing.Point(54, 262);
@@ -97,6 +101,7 @@
             // 
             this.ViewButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ViewButton.FlatAppearance.BorderSize = 0;
+            this.ViewButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewButton.Image = global::Simple_Library_Surfer.Properties.Resources.View;
             this.ViewButton.Location = new System.Drawing.Point(510, 262);
@@ -112,6 +117,7 @@
             // 
             this.UpdateButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UpdateButton.FlatAppearance.BorderSize = 0;
+            this.UpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateButton.Image = global::Simple_Library_Surfer.Properties.Resources.Update;
             this.UpdateButton.Location = new System.Drawing.Point(510, 168);
@@ -127,6 +133,7 @@
             // 
             this.InsertButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.InsertButton.FlatAppearance.BorderSize = 0;
+            this.InsertButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.InsertButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InsertButton.Image = global::Simple_Library_Surfer.Properties.Resources.Insert;
             this.InsertButton.Location = new System.Drawing.Point(54, 168);
@@ -138,12 +145,63 @@
             this.InsertButton.UseVisualStyleBackColor = true;
             this.InsertButton.Click += new System.EventHandler(this.InsertButton_Click);
             // 
+            // FormCloseButton
+            // 
+            this.FormCloseButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FormCloseButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.FormCloseButton.FlatAppearance.BorderSize = 0;
+            this.FormCloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.FormCloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.FormCloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FormCloseButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormCloseButton.Location = new System.Drawing.Point(575, 0);
+            this.FormCloseButton.Name = "FormCloseButton";
+            this.FormCloseButton.Size = new System.Drawing.Size(25, 25);
+            this.FormCloseButton.TabIndex = 5;
+            this.FormCloseButton.Text = "X";
+            this.FormCloseButton.UseVisualStyleBackColor = false;
+            this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
+            // 
+            // FormMinimizeButton
+            // 
+            this.FormMinimizeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FormMinimizeButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.FormMinimizeButton.FlatAppearance.BorderSize = 0;
+            this.FormMinimizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.FormMinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.FormMinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FormMinimizeButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormMinimizeButton.Location = new System.Drawing.Point(546, 0);
+            this.FormMinimizeButton.Name = "FormMinimizeButton";
+            this.FormMinimizeButton.Size = new System.Drawing.Size(25, 25);
+            this.FormMinimizeButton.TabIndex = 6;
+            this.FormMinimizeButton.Text = "-";
+            this.FormMinimizeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.FormMinimizeButton.UseVisualStyleBackColor = false;
+            this.FormMinimizeButton.Click += new System.EventHandler(this.FormMinimizeButton_Click);
+            // 
+            // SLSHeaderLabel
+            // 
+            this.SLSHeaderLabel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.SLSHeaderLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SLSHeaderLabel.Image = global::Simple_Library_Surfer.Properties.Resources.SLS_Image_Icon;
+            this.SLSHeaderLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SLSHeaderLabel.Location = new System.Drawing.Point(0, 0);
+            this.SLSHeaderLabel.Name = "SLSHeaderLabel";
+            this.SLSHeaderLabel.Size = new System.Drawing.Size(600, 25);
+            this.SLSHeaderLabel.TabIndex = 4;
+            this.SLSHeaderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ControlBox = false;
+            this.Controls.Add(this.FormMinimizeButton);
+            this.Controls.Add(this.FormCloseButton);
+            this.Controls.Add(this.SLSHeaderLabel);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.ViewButton);
             this.Controls.Add(this.UpdateButton);
@@ -151,9 +209,11 @@
             this.Controls.Add(this.TotalBooksCountLabel);
             this.Controls.Add(this.TotalTextLabel);
             this.Controls.Add(this.ProjectTitleLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "S L S ";
@@ -173,6 +233,9 @@
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button ViewButton;
         private System.Windows.Forms.ToolTip MainFormToolTip;
+        private System.Windows.Forms.Label SLSHeaderLabel;
+        private System.Windows.Forms.Button FormCloseButton;
+        private System.Windows.Forms.Button FormMinimizeButton;
     }
 }
 

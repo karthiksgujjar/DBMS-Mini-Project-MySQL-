@@ -20,6 +20,16 @@ namespace Simple_Library_Surfer
             InitializeComponent();
         }
 
+        private void FormCloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormMinimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             //string constring = File.ReadAllText("DBConnect.dat");
@@ -107,5 +117,6 @@ namespace Simple_Library_Surfer
                 }
             }
         }
+
     }
 }

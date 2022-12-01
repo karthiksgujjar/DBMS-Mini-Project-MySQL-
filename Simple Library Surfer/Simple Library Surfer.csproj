@@ -239,6 +239,7 @@
     <None Include="Resources\Clear Form.png" />
     <None Include="Resources\Report.png" />
     <None Include="Resources\Search.png" />
+    <None Include="Resources\SLS Image Icon.png" />
     <Content Include="SLS Icon.ico" />
   </ItemGroup>
   <ItemGroup />

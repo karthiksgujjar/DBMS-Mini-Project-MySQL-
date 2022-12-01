@@ -65,5 +65,15 @@ namespace Simple_Library_Surfer
                 this.Close();
             }
         }
+
+        private void FormCloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormMinimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

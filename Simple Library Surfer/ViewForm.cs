@@ -32,6 +32,16 @@ namespace Simple_Library_Surfer
             InitializeComponent();
         }
 
+        private void FormCloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormMinimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        
         private void ViewForm_Load(object sender, EventArgs e)
         {
             //string constring = Properties.Settings.Default.constring;
@@ -83,8 +93,8 @@ namespace Simple_Library_Surfer
                 MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        static void LabelPropertiesSet(Label x)
+        
+        private void LabelPropertiesSet(Label x)
         {
             x.AutoSize = true;
             x.Font = new Font("Comic Sans MS", 12, FontStyle.Italic);
@@ -176,6 +186,7 @@ namespace Simple_Library_Surfer
         private void SearchButton_Click(object sender, EventArgs e)
         {
             SearchTextBox.Visible = true;
+            UnderbarLabel1.Visible = true;
             SearchTextBox.Focus();
         }
 
@@ -268,9 +279,11 @@ namespace Simple_Library_Surfer
                 e.Handled = true;
                 LibraryDataTable.Show();
                 SearchedDataTable.Visible = false;
+                UnderbarLabel1.Visible = false;
                 SearchTextBox.Visible = false;
             }
             
         }
+
     }
 }

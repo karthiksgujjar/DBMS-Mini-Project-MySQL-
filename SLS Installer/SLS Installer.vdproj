@@ -2224,7 +2224,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Simple Library Surfer"
         "ProductCode" = "8:{8CD6BCFB-A7EE-4328-82C5-62B176B6B7A9}"
-        "PackageCode" = "8:{0FDFD710-5FB4-4ADF-B08C-E45C27C4E2B4}"
+        "PackageCode" = "8:{85BDAFCD-5F24-4630-88BA-BB475D779711}"
         "UpgradeCode" = "8:{942FF66E-2D57-4596-980C-001D373BCD63}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

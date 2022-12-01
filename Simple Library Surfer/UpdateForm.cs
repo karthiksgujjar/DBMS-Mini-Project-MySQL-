@@ -20,6 +20,16 @@ namespace Simple_Library_Surfer
             InitializeComponent();
         }
 
+        private void FormCloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormMinimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             //string constring = File.ReadAllText("DBConnect.dat");
@@ -37,8 +47,10 @@ namespace Simple_Library_Surfer
                 {
                     try
                     {
-                        Convert.ToInt32(NewIdTB.Text);
-                        Convert.ToInt32(CurrentIdTB.Text);
+                        if (!(Convert.ToInt32(NewIdTB.Text) > 0) || !(Convert.ToInt32(CurrentIdTB.Text) > 0))
+                        {
+                            throw new FormatException();
+                        }
                         cmd.Parameters.AddWithValue("@NameOfBook", NameTB.Text);
                         cmd.Parameters.AddWithValue("@AuthorOfBook", AuthorTB.Text);
                         cmd.Parameters.AddWithValue("@NewIdOfBook", NewIdTB.Text);
@@ -60,7 +72,7 @@ namespace Simple_Library_Surfer
                     }
                     catch (FormatException)
                     {
-                        MessageBox.Show("Enter only Numbers in ID Field\n", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Enter only Positive Numbers in ID Field\n", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -85,5 +97,6 @@ namespace Simple_Library_Surfer
             NewIdTB.Clear();
             NameTB.Focus();
         }
+
     }
 }

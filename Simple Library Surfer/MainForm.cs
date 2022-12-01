@@ -19,31 +19,17 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
-
-        private void InsertButton_Click(object sender, EventArgs e)
+        
+        private void FormCloseButton_Click(object sender, EventArgs e)
         {
-            InsertForm insertForm = new InsertForm();
-            insertForm.ShowDialog();
+            Application.Exit();
         }
 
-        private void DeleteButton_Click(object sender, EventArgs e)
+        private void FormMinimizeButton_Click(object sender, EventArgs e)
         {
-            DeleteForm deleteForm = new DeleteForm();
-            deleteForm.ShowDialog();
+            this.WindowState = FormWindowState.Minimized;
         }
-
-        private void UpdateButton_Click(object sender, EventArgs e)
-        {
-            UpdateForm updateForm = new UpdateForm();
-            updateForm.ShowDialog();
-        }
-
-        private void ViewButton_Click(object sender, EventArgs e)
-        {
-            ViewForm viewForm = new ViewForm();
-            viewForm.ShowDialog();
-        }
-
+        
         private void BooksCountUpdate_OnFormActivation(object sender, EventArgs e)
         {
             //string constring = File.ReadAllText("DBConnect.dat");
@@ -75,5 +61,28 @@ namespace Simple_Library_Surfer
             
         }
 
+        private void InsertButton_Click(object sender, EventArgs e)
+        {
+            InsertForm insertForm = new InsertForm();
+            insertForm.ShowDialog();
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            DeleteForm deleteForm = new DeleteForm();
+            deleteForm.ShowDialog();
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            UpdateForm updateForm = new UpdateForm();
+            updateForm.ShowDialog();
+        }
+
+        private void ViewButton_Click(object sender, EventArgs e)
+        {
+            ViewForm viewForm = new ViewForm();
+            viewForm.ShowDialog();
+        }
     }
 }
