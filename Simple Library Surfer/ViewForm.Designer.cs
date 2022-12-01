@@ -54,7 +54,7 @@
             this.TotalTextLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalTextLabel.AutoSize = true;
             this.TotalTextLabel.Font = new System.Drawing.Font("Comic Sans MS", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTextLabel.Location = new System.Drawing.Point(291, 128);
+            this.TotalTextLabel.Location = new System.Drawing.Point(291, 106);
             this.TotalTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalTextLabel.Name = "TotalTextLabel";
             this.TotalTextLabel.Size = new System.Drawing.Size(281, 32);
@@ -68,7 +68,7 @@
             this.SlNoTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.SlNoTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SlNoTitleLabel.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SlNoTitleLabel.Location = new System.Drawing.Point(10, 8);
+            this.SlNoTitleLabel.Location = new System.Drawing.Point(10, 7);
             this.SlNoTitleLabel.Name = "SlNoTitleLabel";
             this.SlNoTitleLabel.Size = new System.Drawing.Size(65, 22);
             this.SlNoTitleLabel.TabIndex = 0;
@@ -82,7 +82,7 @@
             this.NameOfBookTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.NameOfBookTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NameOfBookTitleLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameOfBookTitleLabel.Location = new System.Drawing.Point(181, 8);
+            this.NameOfBookTitleLabel.Location = new System.Drawing.Point(181, 6);
             this.NameOfBookTitleLabel.Name = "NameOfBookTitleLabel";
             this.NameOfBookTitleLabel.Size = new System.Drawing.Size(110, 23);
             this.NameOfBookTitleLabel.TabIndex = 0;
@@ -96,7 +96,7 @@
             this.AuthorOfBookTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.AuthorOfBookTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AuthorOfBookTitleLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AuthorOfBookTitleLabel.Location = new System.Drawing.Point(475, 8);
+            this.AuthorOfBookTitleLabel.Location = new System.Drawing.Point(475, 6);
             this.AuthorOfBookTitleLabel.Name = "AuthorOfBookTitleLabel";
             this.AuthorOfBookTitleLabel.Size = new System.Drawing.Size(128, 23);
             this.AuthorOfBookTitleLabel.TabIndex = 0;
@@ -110,7 +110,7 @@
             this.IdOfBookTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.IdOfBookTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IdOfBookTitleLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdOfBookTitleLabel.Location = new System.Drawing.Point(735, 8);
+            this.IdOfBookTitleLabel.Location = new System.Drawing.Point(734, 6);
             this.IdOfBookTitleLabel.Name = "IdOfBookTitleLabel";
             this.IdOfBookTitleLabel.Size = new System.Drawing.Size(31, 23);
             this.IdOfBookTitleLabel.TabIndex = 0;
@@ -129,18 +129,18 @@
             this.LibraryDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.LibraryDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.LibraryDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
-            this.LibraryDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.LibraryDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.LibraryDataTable.Controls.Add(this.SlNoTitleLabel, 0, 0);
             this.LibraryDataTable.Controls.Add(this.IdOfBookTitleLabel, 3, 0);
             this.LibraryDataTable.Controls.Add(this.NameOfBookTitleLabel, 1, 0);
             this.LibraryDataTable.Controls.Add(this.AuthorOfBookTitleLabel, 2, 0);
-            this.LibraryDataTable.Location = new System.Drawing.Point(26, 177);
+            this.LibraryDataTable.Location = new System.Drawing.Point(26, 155);
             this.LibraryDataTable.MaximumSize = new System.Drawing.Size(810, 262);
             this.LibraryDataTable.MinimumSize = new System.Drawing.Size(810, 36);
             this.LibraryDataTable.Name = "LibraryDataTable";
             this.LibraryDataTable.RowCount = 1;
-            this.LibraryDataTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.LibraryDataTable.Size = new System.Drawing.Size(810, 39);
+            this.LibraryDataTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.LibraryDataTable.Size = new System.Drawing.Size(810, 36);
             this.LibraryDataTable.TabIndex = 4;
             // 
             // SearchButton
@@ -150,7 +150,7 @@
             this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SearchButton.Image = global::Simple_Library_Surfer.Properties.Resources.Search;
-            this.SearchButton.Location = new System.Drawing.Point(26, 129);
+            this.SearchButton.Location = new System.Drawing.Point(26, 107);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(38, 38);
             this.SearchButton.TabIndex = 6;
@@ -165,7 +165,7 @@
             this.GenerateReportButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.GenerateReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenerateReportButton.Image = global::Simple_Library_Surfer.Properties.Resources.Report;
-            this.GenerateReportButton.Location = new System.Drawing.Point(798, 129);
+            this.GenerateReportButton.Location = new System.Drawing.Point(798, 107);
             this.GenerateReportButton.Name = "GenerateReportButton";
             this.GenerateReportButton.Size = new System.Drawing.Size(38, 38);
             this.GenerateReportButton.TabIndex = 5;
@@ -178,7 +178,7 @@
             this.SearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SearchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchTextBox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchTextBox.Location = new System.Drawing.Point(78, 143);
+            this.SearchTextBox.Location = new System.Drawing.Point(78, 121);
             this.SearchTextBox.Name = "SearchTextBox";
             this.SearchTextBox.Size = new System.Drawing.Size(139, 19);
             this.SearchTextBox.TabIndex = 7;
@@ -196,14 +196,14 @@
             this.SearchedDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.SearchedDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.SearchedDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
-            this.SearchedDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
-            this.SearchedDataTable.Location = new System.Drawing.Point(26, 177);
+            this.SearchedDataTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.SearchedDataTable.Location = new System.Drawing.Point(26, 155);
             this.SearchedDataTable.MaximumSize = new System.Drawing.Size(810, 262);
             this.SearchedDataTable.MinimumSize = new System.Drawing.Size(810, 36);
             this.SearchedDataTable.Name = "SearchedDataTable";
             this.SearchedDataTable.RowCount = 1;
-            this.SearchedDataTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.SearchedDataTable.Size = new System.Drawing.Size(810, 42);
+            this.SearchedDataTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.SearchedDataTable.Size = new System.Drawing.Size(810, 36);
             this.SearchedDataTable.TabIndex = 5;
             this.SearchedDataTable.Visible = false;
             // 
@@ -270,7 +270,7 @@
             // UnderbarLabel1
             // 
             this.UnderbarLabel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel1.Location = new System.Drawing.Point(78, 165);
+            this.UnderbarLabel1.Location = new System.Drawing.Point(78, 143);
             this.UnderbarLabel1.Name = "UnderbarLabel1";
             this.UnderbarLabel1.Size = new System.Drawing.Size(139, 1);
             this.UnderbarLabel1.TabIndex = 15;
