@@ -51,15 +51,16 @@
             // SaveButton
             // 
             this.SaveButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SaveButton.AutoSize = true;
             this.SaveButton.BackColor = System.Drawing.Color.Transparent;
             this.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.SaveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.SaveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(163, 260);
+            this.SaveButton.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.Location = new System.Drawing.Point(166, 249);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(87, 30);
+            this.SaveButton.Size = new System.Drawing.Size(72, 35);
             this.SaveButton.TabIndex = 15;
             this.SaveButton.Text = "SAVE";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -69,31 +70,31 @@
             // 
             this.UserNameTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UserNameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserNameTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameTB.Location = new System.Drawing.Point(266, 144);
+            this.UserNameTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameTB.Location = new System.Drawing.Point(253, 143);
             this.UserNameTB.Name = "UserNameTB";
-            this.UserNameTB.Size = new System.Drawing.Size(198, 24);
+            this.UserNameTB.Size = new System.Drawing.Size(198, 21);
             this.UserNameTB.TabIndex = 13;
             // 
             // ServerNameTB
             // 
             this.ServerNameTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ServerNameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ServerNameTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServerNameTB.Location = new System.Drawing.Point(266, 92);
+            this.ServerNameTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServerNameTB.Location = new System.Drawing.Point(253, 91);
             this.ServerNameTB.Name = "ServerNameTB";
-            this.ServerNameTB.Size = new System.Drawing.Size(198, 24);
+            this.ServerNameTB.Size = new System.Drawing.Size(198, 21);
             this.ServerNameTB.TabIndex = 12;
             // 
             // ServerNameLabel
             // 
             this.ServerNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ServerNameLabel.AutoSize = true;
-            this.ServerNameLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServerNameLabel.Location = new System.Drawing.Point(75, 84);
+            this.ServerNameLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServerNameLabel.Location = new System.Drawing.Point(104, 84);
             this.ServerNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ServerNameLabel.Name = "ServerNameLabel";
-            this.ServerNameLabel.Size = new System.Drawing.Size(175, 32);
+            this.ServerNameLabel.Size = new System.Drawing.Size(144, 28);
             this.ServerNameLabel.TabIndex = 20;
             this.ServerNameLabel.Text = "Server Name :";
             // 
@@ -101,21 +102,21 @@
             // 
             this.PasswordTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PasswordTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTB.Location = new System.Drawing.Point(266, 200);
+            this.PasswordTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTB.Location = new System.Drawing.Point(253, 199);
             this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(198, 24);
+            this.PasswordTB.Size = new System.Drawing.Size(198, 21);
             this.PasswordTB.TabIndex = 14;
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(119, 196);
+            this.PasswordLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.Location = new System.Drawing.Point(134, 196);
             this.PasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(131, 32);
+            this.PasswordLabel.Size = new System.Drawing.Size(114, 28);
             this.PasswordLabel.TabIndex = 18;
             this.PasswordLabel.Text = "Password :";
             // 
@@ -123,11 +124,11 @@
             // 
             this.UserNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UserNameLabel.AutoSize = true;
-            this.UserNameLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLabel.Location = new System.Drawing.Point(97, 140);
+            this.UserNameLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameLabel.Location = new System.Drawing.Point(121, 140);
             this.UserNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(153, 32);
+            this.UserNameLabel.Size = new System.Drawing.Size(127, 28);
             this.UserNameLabel.TabIndex = 19;
             this.UserNameLabel.Text = "User Name :";
             // 
@@ -138,7 +139,7 @@
             this.ClearFormButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
             this.ClearFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearFormButton.Image = global::Simple_Library_Surfer.Properties.Resources.Clear_Form;
-            this.ClearFormButton.Location = new System.Drawing.Point(426, 260);
+            this.ClearFormButton.Location = new System.Drawing.Point(413, 254);
             this.ClearFormButton.Margin = new System.Windows.Forms.Padding(2);
             this.ClearFormButton.Name = "ClearFormButton";
             this.ClearFormButton.Size = new System.Drawing.Size(38, 30);
@@ -153,13 +154,12 @@
             this.FormMinimizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormMinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.FormMinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormMinimizeButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormMinimizeButton.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormMinimizeButton.Location = new System.Drawing.Point(501, 0);
             this.FormMinimizeButton.Name = "FormMinimizeButton";
             this.FormMinimizeButton.Size = new System.Drawing.Size(25, 25);
             this.FormMinimizeButton.TabIndex = 24;
             this.FormMinimizeButton.Text = "-";
-            this.FormMinimizeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.FormMinimizeButton.UseVisualStyleBackColor = false;
             this.FormMinimizeButton.Click += new System.EventHandler(this.FormMinimizeButton_Click);
             // 
@@ -171,12 +171,13 @@
             this.FormCloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormCloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.FormCloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormCloseButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormCloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormCloseButton.Location = new System.Drawing.Point(530, 0);
             this.FormCloseButton.Name = "FormCloseButton";
             this.FormCloseButton.Size = new System.Drawing.Size(25, 25);
             this.FormCloseButton.TabIndex = 23;
             this.FormCloseButton.Text = "X";
+            this.FormCloseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.FormCloseButton.UseVisualStyleBackColor = false;
             this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
             // 
@@ -208,7 +209,7 @@
             // UnderbarLabel3
             // 
             this.UnderbarLabel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel3.Location = new System.Drawing.Point(266, 227);
+            this.UnderbarLabel3.Location = new System.Drawing.Point(253, 223);
             this.UnderbarLabel3.Name = "UnderbarLabel3";
             this.UnderbarLabel3.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel3.TabIndex = 27;
@@ -217,7 +218,7 @@
             // UnderbarLabel2
             // 
             this.UnderbarLabel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel2.Location = new System.Drawing.Point(266, 171);
+            this.UnderbarLabel2.Location = new System.Drawing.Point(253, 167);
             this.UnderbarLabel2.Name = "UnderbarLabel2";
             this.UnderbarLabel2.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel2.TabIndex = 26;
@@ -226,7 +227,7 @@
             // UnderbarLabel1
             // 
             this.UnderbarLabel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel1.Location = new System.Drawing.Point(266, 119);
+            this.UnderbarLabel1.Location = new System.Drawing.Point(253, 115);
             this.UnderbarLabel1.Name = "UnderbarLabel1";
             this.UnderbarLabel1.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel1.TabIndex = 25;

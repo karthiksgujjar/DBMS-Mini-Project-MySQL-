@@ -84,5 +84,10 @@ namespace Simple_Library_Surfer
             ViewForm viewForm = new ViewForm();
             viewForm.ShowDialog();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

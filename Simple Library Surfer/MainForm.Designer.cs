@@ -60,11 +60,11 @@
             // 
             this.TotalTextLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalTextLabel.AutoSize = true;
-            this.TotalTextLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTextLabel.Location = new System.Drawing.Point(127, 96);
+            this.TotalTextLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTextLabel.Location = new System.Drawing.Point(162, 96);
             this.TotalTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalTextLabel.Name = "TotalTextLabel";
-            this.TotalTextLabel.Size = new System.Drawing.Size(346, 32);
+            this.TotalTextLabel.Size = new System.Drawing.Size(276, 28);
             this.TotalTextLabel.TabIndex = 1;
             this.TotalTextLabel.Text = "- Total Books in the Library -";
             // 
@@ -72,12 +72,12 @@
             // 
             this.TotalBooksCountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalBooksCountLabel.AutoSize = true;
-            this.TotalBooksCountLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalBooksCountLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalBooksCountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TotalBooksCountLabel.Location = new System.Drawing.Point(274, 136);
+            this.TotalBooksCountLabel.Location = new System.Drawing.Point(288, 136);
             this.TotalBooksCountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalBooksCountLabel.Name = "TotalBooksCountLabel";
-            this.TotalBooksCountLabel.Size = new System.Drawing.Size(27, 32);
+            this.TotalBooksCountLabel.Size = new System.Drawing.Size(24, 28);
             this.TotalBooksCountLabel.TabIndex = 1;
             this.TotalBooksCountLabel.Text = "0";
             // 
@@ -153,12 +153,13 @@
             this.FormCloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormCloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.FormCloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormCloseButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormCloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormCloseButton.Location = new System.Drawing.Point(575, 0);
             this.FormCloseButton.Name = "FormCloseButton";
             this.FormCloseButton.Size = new System.Drawing.Size(25, 25);
             this.FormCloseButton.TabIndex = 5;
             this.FormCloseButton.Text = "X";
+            this.FormCloseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.FormCloseButton.UseVisualStyleBackColor = false;
             this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
             // 
@@ -170,13 +171,12 @@
             this.FormMinimizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormMinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.FormMinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormMinimizeButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormMinimizeButton.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormMinimizeButton.Location = new System.Drawing.Point(546, 0);
             this.FormMinimizeButton.Name = "FormMinimizeButton";
             this.FormMinimizeButton.Size = new System.Drawing.Size(25, 25);
             this.FormMinimizeButton.TabIndex = 6;
             this.FormMinimizeButton.Text = "-";
-            this.FormMinimizeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.FormMinimizeButton.UseVisualStyleBackColor = false;
             this.FormMinimizeButton.Click += new System.EventHandler(this.FormMinimizeButton_Click);
             // 
@@ -218,6 +218,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "S L S ";
             this.Activated += new System.EventHandler(this.BooksCountUpdate_OnFormActivation);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

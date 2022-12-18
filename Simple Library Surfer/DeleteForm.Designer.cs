@@ -46,15 +46,16 @@
             // DeleteButton
             // 
             this.DeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DeleteButton.AutoSize = true;
             this.DeleteButton.BackColor = System.Drawing.Color.Transparent;
             this.DeleteButton.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.DeleteButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.DeleteButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.Location = new System.Drawing.Point(259, 160);
+            this.DeleteButton.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.Location = new System.Drawing.Point(261, 160);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(87, 30);
+            this.DeleteButton.Size = new System.Drawing.Size(78, 35);
             this.DeleteButton.TabIndex = 1;
             this.DeleteButton.Text = "DELETE";
             this.DeleteButton.UseVisualStyleBackColor = false;
@@ -64,22 +65,22 @@
             // 
             this.IdTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IdTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.IdTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdTB.Location = new System.Drawing.Point(203, 97);
+            this.IdTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdTB.Location = new System.Drawing.Point(203, 99);
             this.IdTB.MaxLength = 5;
             this.IdTB.Name = "IdTB";
-            this.IdTB.Size = new System.Drawing.Size(198, 24);
+            this.IdTB.Size = new System.Drawing.Size(198, 21);
             this.IdTB.TabIndex = 0;
             // 
             // isbnLabel
             // 
             this.isbnLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.isbnLabel.AutoSize = true;
-            this.isbnLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isbnLabel.Location = new System.Drawing.Point(139, 91);
+            this.isbnLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isbnLabel.Location = new System.Drawing.Point(154, 95);
             this.isbnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.isbnLabel.Name = "isbnLabel";
-            this.isbnLabel.Size = new System.Drawing.Size(62, 32);
+            this.isbnLabel.Size = new System.Drawing.Size(44, 28);
             this.isbnLabel.TabIndex = 6;
             this.isbnLabel.Text = "ID :";
             // 
@@ -102,16 +103,17 @@
             // MasterDeleteButton
             // 
             this.MasterDeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MasterDeleteButton.AutoSize = true;
             this.MasterDeleteButton.BackColor = System.Drawing.Color.Transparent;
             this.MasterDeleteButton.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.MasterDeleteButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.MasterDeleteButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.MasterDeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MasterDeleteButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MasterDeleteButton.Location = new System.Drawing.Point(203, 223);
+            this.MasterDeleteButton.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MasterDeleteButton.Location = new System.Drawing.Point(209, 223);
             this.MasterDeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.MasterDeleteButton.Name = "MasterDeleteButton";
-            this.MasterDeleteButton.Size = new System.Drawing.Size(198, 30);
+            this.MasterDeleteButton.Size = new System.Drawing.Size(182, 35);
             this.MasterDeleteButton.TabIndex = 2;
             this.MasterDeleteButton.Text = "DELETE EVERYTHING";
             this.MasterDeleteButton.UseVisualStyleBackColor = false;
@@ -125,13 +127,12 @@
             this.FormMinimizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormMinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.FormMinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormMinimizeButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormMinimizeButton.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormMinimizeButton.Location = new System.Drawing.Point(546, 0);
             this.FormMinimizeButton.Name = "FormMinimizeButton";
             this.FormMinimizeButton.Size = new System.Drawing.Size(25, 25);
             this.FormMinimizeButton.TabIndex = 14;
             this.FormMinimizeButton.Text = "-";
-            this.FormMinimizeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.FormMinimizeButton.UseVisualStyleBackColor = false;
             this.FormMinimizeButton.Click += new System.EventHandler(this.FormMinimizeButton_Click);
             // 
@@ -143,12 +144,13 @@
             this.FormCloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormCloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.FormCloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormCloseButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormCloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormCloseButton.Location = new System.Drawing.Point(575, 0);
             this.FormCloseButton.Name = "FormCloseButton";
             this.FormCloseButton.Size = new System.Drawing.Size(25, 25);
             this.FormCloseButton.TabIndex = 13;
             this.FormCloseButton.Text = "X";
+            this.FormCloseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.FormCloseButton.UseVisualStyleBackColor = false;
             this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
             // 
@@ -180,7 +182,7 @@
             // UnderbarLabel1
             // 
             this.UnderbarLabel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel1.Location = new System.Drawing.Point(203, 124);
+            this.UnderbarLabel1.Location = new System.Drawing.Point(203, 123);
             this.UnderbarLabel1.Name = "UnderbarLabel1";
             this.UnderbarLabel1.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel1.TabIndex = 15;

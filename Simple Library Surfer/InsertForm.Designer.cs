@@ -52,11 +52,11 @@
             // 
             this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLabel.Location = new System.Drawing.Point(133, 114);
+            this.NameLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.Location = new System.Drawing.Point(164, 114);
             this.NameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(93, 32);
+            this.NameLabel.Size = new System.Drawing.Size(79, 28);
             this.NameLabel.TabIndex = 2;
             this.NameLabel.Text = "Name :";
             // 
@@ -64,11 +64,11 @@
             // 
             this.AuthorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AuthorLabel.AutoSize = true;
-            this.AuthorLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AuthorLabel.Location = new System.Drawing.Point(119, 178);
+            this.AuthorLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AuthorLabel.Location = new System.Drawing.Point(154, 178);
             this.AuthorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AuthorLabel.Name = "AuthorLabel";
-            this.AuthorLabel.Size = new System.Drawing.Size(107, 32);
+            this.AuthorLabel.Size = new System.Drawing.Size(89, 28);
             this.AuthorLabel.TabIndex = 2;
             this.AuthorLabel.Text = "Author :";
             // 
@@ -76,11 +76,11 @@
             // 
             this.IdLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IdLabel.AutoSize = true;
-            this.IdLabel.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdLabel.Location = new System.Drawing.Point(162, 242);
+            this.IdLabel.Font = new System.Drawing.Font("Calibri", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdLabel.Location = new System.Drawing.Point(199, 242);
             this.IdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IdLabel.Name = "IdLabel";
-            this.IdLabel.Size = new System.Drawing.Size(62, 32);
+            this.IdLabel.Size = new System.Drawing.Size(44, 28);
             this.IdLabel.TabIndex = 2;
             this.IdLabel.Text = "ID :";
             // 
@@ -88,45 +88,46 @@
             // 
             this.NameTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NameTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTB.Location = new System.Drawing.Point(242, 119);
+            this.NameTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTB.Location = new System.Drawing.Point(248, 120);
             this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(198, 24);
+            this.NameTB.Size = new System.Drawing.Size(198, 21);
             this.NameTB.TabIndex = 0;
             // 
             // AuthorTB
             // 
             this.AuthorTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AuthorTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AuthorTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AuthorTB.Location = new System.Drawing.Point(242, 184);
+            this.AuthorTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AuthorTB.Location = new System.Drawing.Point(248, 185);
             this.AuthorTB.Name = "AuthorTB";
-            this.AuthorTB.Size = new System.Drawing.Size(198, 24);
+            this.AuthorTB.Size = new System.Drawing.Size(198, 21);
             this.AuthorTB.TabIndex = 1;
             // 
             // IdTB
             // 
             this.IdTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IdTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.IdTB.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdTB.Location = new System.Drawing.Point(242, 250);
+            this.IdTB.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdTB.Location = new System.Drawing.Point(248, 251);
             this.IdTB.MaxLength = 5;
             this.IdTB.Name = "IdTB";
-            this.IdTB.Size = new System.Drawing.Size(198, 24);
+            this.IdTB.Size = new System.Drawing.Size(198, 21);
             this.IdTB.TabIndex = 2;
             // 
             // InsertButton
             // 
             this.InsertButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.InsertButton.AutoSize = true;
             this.InsertButton.BackColor = System.Drawing.Color.Transparent;
             this.InsertButton.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.InsertButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.InsertButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.InsertButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InsertButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InsertButton.Location = new System.Drawing.Point(125, 312);
+            this.InsertButton.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InsertButton.Location = new System.Drawing.Point(159, 312);
             this.InsertButton.Name = "InsertButton";
-            this.InsertButton.Size = new System.Drawing.Size(87, 30);
+            this.InsertButton.Size = new System.Drawing.Size(77, 35);
             this.InsertButton.TabIndex = 3;
             this.InsertButton.Text = "INSERT";
             this.InsertButton.UseVisualStyleBackColor = false;
@@ -151,7 +152,7 @@
             // UnderbarLabel1
             // 
             this.UnderbarLabel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel1.Location = new System.Drawing.Point(242, 146);
+            this.UnderbarLabel1.Location = new System.Drawing.Point(248, 144);
             this.UnderbarLabel1.Name = "UnderbarLabel1";
             this.UnderbarLabel1.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel1.TabIndex = 11;
@@ -160,7 +161,7 @@
             // UnderbarLabel2
             // 
             this.UnderbarLabel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel2.Location = new System.Drawing.Point(242, 211);
+            this.UnderbarLabel2.Location = new System.Drawing.Point(248, 209);
             this.UnderbarLabel2.Name = "UnderbarLabel2";
             this.UnderbarLabel2.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel2.TabIndex = 12;
@@ -169,7 +170,7 @@
             // UnderbarLabel3
             // 
             this.UnderbarLabel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.UnderbarLabel3.Location = new System.Drawing.Point(242, 277);
+            this.UnderbarLabel3.Location = new System.Drawing.Point(248, 275);
             this.UnderbarLabel3.Name = "UnderbarLabel3";
             this.UnderbarLabel3.Size = new System.Drawing.Size(198, 1);
             this.UnderbarLabel3.TabIndex = 13;
@@ -208,12 +209,13 @@
             this.FormCloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormCloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.FormCloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormCloseButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormCloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormCloseButton.Location = new System.Drawing.Point(575, 0);
             this.FormCloseButton.Name = "FormCloseButton";
             this.FormCloseButton.Size = new System.Drawing.Size(25, 25);
             this.FormCloseButton.TabIndex = 9;
             this.FormCloseButton.Text = "X";
+            this.FormCloseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.FormCloseButton.UseVisualStyleBackColor = false;
             this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
             // 
@@ -225,13 +227,12 @@
             this.FormMinimizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.FormMinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.FormMinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FormMinimizeButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormMinimizeButton.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormMinimizeButton.Location = new System.Drawing.Point(546, 0);
             this.FormMinimizeButton.Name = "FormMinimizeButton";
             this.FormMinimizeButton.Size = new System.Drawing.Size(25, 25);
             this.FormMinimizeButton.TabIndex = 10;
             this.FormMinimizeButton.Text = "-";
-            this.FormMinimizeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.FormMinimizeButton.UseVisualStyleBackColor = false;
             this.FormMinimizeButton.Click += new System.EventHandler(this.FormMinimizeButton_Click);
             // 

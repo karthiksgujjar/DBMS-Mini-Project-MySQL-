@@ -97,7 +97,7 @@ namespace Simple_Library_Surfer
         private void LabelPropertiesSet(Label x)
         {
             x.AutoSize = true;
-            x.Font = new Font("Comic Sans MS", 12, FontStyle.Italic);
+            x.Font = new Font("Calibri", 14, FontStyle.Italic);
             x.Anchor = AnchorStyles.None;
             x.TextAlign = ContentAlignment.MiddleCenter;
         }
