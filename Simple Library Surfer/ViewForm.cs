@@ -31,41 +31,32 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
-
         private void FormCloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void FormMinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
         private void ViewForm_Load(object sender, EventArgs e)
         {
-            //string constring = Properties.Settings.Default.constring;
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "SELECT * FROM Library";
             MySqlCommand cmd = new MySqlCommand(query, con);
-
             try
             {
                 con.Open();
                 MySqlDataReader LibraryData = cmd.ExecuteReader();
-
                 int Count = 0;
-
                 while (LibraryData.Read())
                 {
                     Count++;
-
                     LibraryDataTable.RowStyles.Add(new RowStyle(SizeType.AutoSize));
                     LibraryDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 60F));
                     LibraryDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
                     LibraryDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
                     LibraryDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 100F));
-
                     Label slno = new Label();
                     slno.Text = Count.ToString();
                     LabelPropertiesSet(slno);
@@ -93,7 +84,6 @@ namespace Simple_Library_Surfer
                 MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
         private void LabelPropertiesSet(Label x)
         {
             x.AutoSize = true;
@@ -101,7 +91,6 @@ namespace Simple_Library_Surfer
             x.Anchor = AnchorStyles.None;
             x.TextAlign = ContentAlignment.MiddleCenter;
         }
-
         private void GenerateReportButton_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
@@ -115,8 +104,7 @@ namespace Simple_Library_Surfer
                 Document doc = new Document(pdf, PageSize.A4);
                 PdfFont BoldItalic = PdfFontFactory.CreateFont(StandardFonts.COURIER_BOLDOBLIQUE);
                 PdfFont Italic = PdfFontFactory.CreateFont(StandardFonts.COURIER_OBLIQUE);
-
-
+                
                 Paragraph Title = new Paragraph("SIMPLE LIBRARY SURFER").SetFont(BoldItalic).SetTextAlignment(TextAlignment.CENTER).SetFontSize(30).SetFontColor(ColorConstants.ORANGE);
                 doc.Add(Title);
 
@@ -143,28 +131,21 @@ namespace Simple_Library_Surfer
                 PdfTable.AddCell(RTName);
                 PdfTable.AddCell(RTAuthor);
                 PdfTable.AddCell(RTID);
-
                 try
                 {
-                    //string constring = File.ReadAllText("DBConnect.dat");
                     MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                     string query = "SELECT * FROM Library";
                     MySqlCommand cmd = new MySqlCommand(query, con);
-
                     con.Open();
                     MySqlDataReader LibraryData = cmd.ExecuteReader();
-
                     int Count = 0;
-
                     while (LibraryData.Read())
                     {
                         Count++;
-
                         Cell RDSlNo = new Cell(1, 1).SetFont(Italic).SetBackgroundColor(ColorConstants.LIGHT_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph(Count.ToString()));
                         Cell RDName = new Cell(1, 1).SetFont(Italic).SetBackgroundColor(ColorConstants.LIGHT_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph(LibraryData["name"].ToString()));
                         Cell RDAuthor = new Cell(1, 1).SetFont(Italic).SetBackgroundColor(ColorConstants.LIGHT_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph(LibraryData["author"].ToString()));
                         Cell RDID = new Cell(1, 1).SetFont(Italic).SetBackgroundColor(ColorConstants.LIGHT_GRAY).SetTextAlignment(TextAlignment.CENTER).Add(new Paragraph(LibraryData["id"].ToString()));
-
                         PdfTable.AddCell(RDSlNo);
                         PdfTable.AddCell(RDName);
                         PdfTable.AddCell(RDAuthor);
@@ -182,14 +163,12 @@ namespace Simple_Library_Surfer
                 }
             }
         }
-
         private void SearchButton_Click(object sender, EventArgs e)
         {
             SearchTextBox.Visible = true;
             UnderbarLabel1.Visible = true;
             SearchTextBox.Focus();
         }
-
         private void SearchTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == 13 && !string.IsNullOrEmpty(SearchTextBox.Text))
@@ -198,16 +177,12 @@ namespace Simple_Library_Surfer
                 MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                 string query = "SELECT * FROM Library";
                 MySqlCommand cmd = new MySqlCommand(query, con);
-
                 SearchedDataTable.Controls.Clear();
-
                 try
                 {
                     con.Open();
                     MySqlDataReader SeacrhedLibraryData = cmd.ExecuteReader();
-
                     int Count = 0;
-
                     Label SlNoTitleLabel = new Label();
                     SlNoTitleLabel.Text = "Sl. No.";
                     LabelPropertiesSet(SlNoTitleLabel);
@@ -237,7 +212,6 @@ namespace Simple_Library_Surfer
                         if (SeacrhedLibraryData["name"].ToString().Contains(SearchTextBox.Text) || SeacrhedLibraryData["author"].ToString().Contains(SearchTextBox.Text) || SeacrhedLibraryData["id"].ToString().Contains(SearchTextBox.Text))
                         {
                             Count++;
-
                             SearchedDataTable.RowStyles.Add(new RowStyle(SizeType.AutoSize));
                             SearchedDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 60F));
                             SearchedDataTable.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
@@ -272,7 +246,6 @@ namespace Simple_Library_Surfer
                 {
                     MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
             else if(e.KeyChar == 13 && string.IsNullOrEmpty(SearchTextBox.Text))
             {
@@ -282,8 +255,6 @@ namespace Simple_Library_Surfer
                 UnderbarLabel1.Visible = false;
                 SearchTextBox.Visible = false;
             }
-            
         }
-
     }
 }

@@ -19,24 +19,19 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
-
         private void FormCloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void FormMinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            //string constring = File.ReadAllText("DBConnect.dat");
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "UPDATE Library SET name=@NameOfBook,author=@AuthorOfBook,id=@NewIdOfBook WHERE id=@CurrentIdOfBook";
             MySqlCommand cmd = new MySqlCommand(query, con);
-
             try
             {
                 if (NameTB.Text == "" || AuthorTB.Text == "" || CurrentIdTB.Text == "" || NewIdTB.Text == "")
@@ -55,10 +50,8 @@ namespace Simple_Library_Surfer
                         cmd.Parameters.AddWithValue("@AuthorOfBook", AuthorTB.Text);
                         cmd.Parameters.AddWithValue("@NewIdOfBook", NewIdTB.Text);
                         cmd.Parameters.AddWithValue("@CurrentIdOfBook", CurrentIdTB.Text);
-
                         con.Open();
                         int res = cmd.ExecuteNonQuery();
-                        
                         if (res > 0)
                         {
                             MessageBox.Show("Updated Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -88,7 +81,6 @@ namespace Simple_Library_Surfer
                 }
             }
         }
-
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
             NameTB.Clear();
@@ -97,6 +89,5 @@ namespace Simple_Library_Surfer
             NewIdTB.Clear();
             NameTB.Focus();
         }
-
     }
 }

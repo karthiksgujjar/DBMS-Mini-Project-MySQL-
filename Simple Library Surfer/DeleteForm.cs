@@ -19,24 +19,19 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
-
         private void FormCloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void FormMinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            //string constring = File.ReadAllText("DBConnect.dat");
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "DELETE FROM Library WHERE id = @IdOfBook";
             MySqlCommand cmd = new MySqlCommand(query, con);
-            
             try
             {
                 if (IdTB.Text == "")
@@ -49,10 +44,8 @@ namespace Simple_Library_Surfer
                     {
                         Convert.ToInt32(IdTB.Text);
                         cmd.Parameters.AddWithValue("@IdOfBook", IdTB.Text);
-                        
                         con.Open();
                         int res = cmd.ExecuteNonQuery();
-                        
                         if (res > 0)
                         {
                             MessageBox.Show("Deleted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -62,7 +55,6 @@ namespace Simple_Library_Surfer
                         {
                             MessageBox.Show("Deletion Failed!", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-
                         con.Close();
                     }
                     catch (FormatException)
@@ -70,35 +62,29 @@ namespace Simple_Library_Surfer
                         MessageBox.Show("Enter only Numbers in ID Field\n", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-        }
+            }
             catch (Exception Err)
             {
                 MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
             IdTB.Clear();
             IdTB.Focus();
         }
-
         private void MasterDeleteButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("This Action cannot be reversed\nDo you really want to DELETE EVERYTHING?", "CONFIRMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,MessageBoxDefaultButton.Button2);
             if (result == DialogResult.Yes)
             {
-               // string constring = File.ReadAllText("DBConnect.dat");
                 MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                 string query = "DELETE FROM Library";
                 MySqlCommand cmd = new MySqlCommand(query, con);
-
-                
                 try
                 {
                     con.Open();
                     int res = cmd.ExecuteNonQuery();
-                    
                     if (res > 0)
                     {
                         MessageBox.Show("Deleted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -117,6 +103,5 @@ namespace Simple_Library_Surfer
                 }
             }
         }
-
     }
 }

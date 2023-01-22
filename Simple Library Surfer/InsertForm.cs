@@ -19,24 +19,19 @@ namespace Simple_Library_Surfer
         {
             InitializeComponent();
         }
-
         private void FormCloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void FormMinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
         private void InsertButton_Click(object sender, EventArgs e) 
         {
-            //string constring = File.ReadAllText("DBConnect.dat");
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "INSERT INTO Library values(@NameOfBook,@AuthorOfBook,@IdOfBook)";
             MySqlCommand cmd = new MySqlCommand(query, con);
-
             try
             {
                 if (NameTB.Text == "" || AuthorTB.Text == "" || IdTB.Text == "")
@@ -51,14 +46,11 @@ namespace Simple_Library_Surfer
                         {
                             throw new FormatException();
                         }
-                        
                         cmd.Parameters.AddWithValue("@NameOfBook", NameTB.Text);
                         cmd.Parameters.AddWithValue("@AuthorOfBook", AuthorTB.Text);
                         cmd.Parameters.AddWithValue("@IdOfBook", IdTB.Text);
-
                         con.Open();
                         int res = cmd.ExecuteNonQuery();
-                        
                         if (res > 0)
                         {
                             MessageBox.Show("Inserted Successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -68,7 +60,6 @@ namespace Simple_Library_Surfer
                         {
                             MessageBox.Show("Insertion Failed!", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-
                         con.Close();
                     }
                     catch (FormatException)
@@ -89,7 +80,6 @@ namespace Simple_Library_Surfer
                 }
             }
         }
-
         private void ClearFormButton_Click(object sender, EventArgs e)
         {
             NameTB.Clear();
@@ -97,6 +87,5 @@ namespace Simple_Library_Surfer
             IdTB.Clear();
             NameTB.Focus();
         }
-
     }
 }

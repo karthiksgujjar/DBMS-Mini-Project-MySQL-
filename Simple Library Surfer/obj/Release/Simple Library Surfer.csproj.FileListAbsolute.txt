@@ -79,3 +79,4 @@ E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surf
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.exe
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple Library Surfer.pdb
 E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.GetDBDetails.resources
+E:\DBMS Mini Project MySQL\Simple Library Surfer\obj\Release\Simple_Library_Surfer.LoginForm.resources
