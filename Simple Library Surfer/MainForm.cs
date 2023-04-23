@@ -40,10 +40,9 @@ namespace Simple_Library_Surfer
             }
             catch (Exception Err)
             {
-                MessageBox.Show("Invalid Database Connection Details.\nPlease Re-Enter Database Connection details for the Application to Run.\n\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                GetDBDetails dBDetails = new GetDBDetails();
-                dBDetails.ShowDialog();
+                MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            con.Close();
         }
         private void InsertButton_Click(object sender, EventArgs e)
         {
