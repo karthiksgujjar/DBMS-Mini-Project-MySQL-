@@ -8,7 +8,7 @@ A mini-project CRUD application developed using .NET with C#(WinForms). This app
 
 ## License
 Simple Library Surfer is licensed under GPL-3.0
-See the [LICENSE]() file.
+See the [LICENSE](https://github.com/karthiksgujjar/SLS/blob/main/LICENSE.md) file.
 
 ## How to use this application?
 
