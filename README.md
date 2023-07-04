@@ -1,7 +1,16 @@
-# GFGC,Tumakuru 5th Sem DBMS Mini Project
-A CRUD App with GUI using .NET with C#(WinForms)
+# Simple Library Surfer 
+A mini-project CRUD application developed using .NET with C#(WinForms). This application can be used to store the details of books in library and manipulate them. It can search for a particular book and also generate a PDF report of the books stored.
 
-How to use this application?
+## Credits:
+* Icons downloaded from: https://icon-icons.com/
+* Tutorial followed: https://youtu.be/62igefFrZq4
+* Most visited website: https://www.c-sharpcorner.com/
+
+## License
+Simple Library Surfer is licensed under GPL-3.0
+See the [LICENSE]() file.
+
+## How to use this application?
 
 1. Make sure 'MySQL Server' Latest Version is installed,
 
