@@ -10,6 +10,8 @@ A mini-project CRUD application developed using .NET with C#(WinForms). This app
 Simple Library Surfer is licensed under GPL-3.0
 See the [LICENSE](https://github.com/karthiksgujjar/SLS/blob/main/LICENSE.md) file.
 
+### Explore more about this project [here](https://karthiksgujjar.github.io/SLS/ "SLS Website")
+
 ## How to use this application?
 
 1. Make sure 'MySQL Server' Latest Version is installed,
