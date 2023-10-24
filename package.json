@@ -1,0 +1,17 @@
+{
+  "name": "sls",
+  "version": "1.0.0",
+  "description": "A mini-project CRUD application developed using .NET with C#(WinForms). This application can be used to store the details of books in library and manipulate them. It can search for a particular book and also generate a PDF report of the books stored.",
+  "main": "index.js",
+  "scripts": {
+    "tailwind" : "npx tailwindcss -i ./input.css -o ./assets/style.css --watch",
+    "prettier" : "npx prettier --write ./index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.3.3"
+  }
+}
