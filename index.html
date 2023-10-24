@@ -1,21 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            text-align: center;
-            color: gray;
-        }
-        a {
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <h1>Site under maintenance</h1>
-    <h3>Here's the link to the <a href="https://github.com/karthiksgujjar/SLS">GitHub Repo</a></h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+    <title>SLS - HomePage</title>
+  </head>
+
+  <body class="radial-blue-bg px-2 py-1 font-mono h-screen">
+    <header class="w-full flex items-center justify-between">
+      <img src="assets/Images/SLS Logo.png" alt="SLS Logo" class="w-12" />
+      <h1 class="font-extrabold text-[1.2rem] text-white sm:text-3xl">
+        Simple Library Surfer
+      </h1>
+      <div class="flex flex-wrap sm:flex-nowrap gap-2 w-min justify-end">
+        <a href="#about" class="text-white rounded-md bg-black px-1">About</a>
+        <a
+          href="SLS Installer/Release/SLS Installer.exe"
+          download="SLS Setup.exe"
+          class="text-white rounded-md bg-black px-1"
+          >Download</a
+        >
+      </div>
+    </header>
+    <main class="flex flex-col gap-20 mt-6">
+      <section class="flex flex-wrap">
+        <section
+          id="screenshots-slider"
+          class="flex flex-col justify-center items-center"
+        >
+          <div class="w-11/12 lg:w-2/4 overflow-hidden rounded-lg">
+            <img src="assets/Images/Main Form.png" alt="SLS Main Form" />
+            <img
+              src="assets/Images/Insert Form.png"
+              alt="SLS Insert Form"
+              hidden
+            />
+            <img
+              src="assets/Images/Delete Form.png"
+              alt="SLS Delete Form"
+              hidden
+            />
+            <img
+              src="assets/Images/Update Form.png"
+              alt="SLS Update Form"
+              hidden
+            />
+            <img
+              src="assets/Images/View Form.png"
+              alt="SLS View Form"
+              hidden
+            />
+          </div>
+          <div>
+            <span
+              class="font-extrabold text-2xl cursor-pointer"
+              onclick="slideIn(0)"
+              >&bullet;</span
+            >
+            <span
+              class="font-extrabold text-2xl cursor-pointer"
+              onclick="slideIn(1) "
+              >&bullet;</span
+            >
+            <span
+              class="font-extrabold text-2xl cursor-pointer"
+              onclick="slideIn(2) "
+              >&bullet;</span
+            >
+            <span
+              class="font-extrabold text-2xl cursor-pointer"
+              onclick="slideIn(3) "
+              >&bullet;</span
+            >
+            <span
+              class="font-extrabold text-2xl cursor-pointer"
+              onclick="slideIn(4) "
+              >&bullet;</span
+            >
+          </div>
+        </section>
+        <section class="w-full">
+          <p class="font-semibold">Pre-Requesites</p>
+          <ul>
+            <li class="list-inside list-disc">MySQL Server 8.0.34</li>
+          </ul>
+          <hr class="my-4 border-0 h-px bg-gray-600" />
+          <p class="font-semibold">How to use?</p>
+          <ol>
+            <li class="list-inside list-decimal">
+              Make sure 'MySQL Server' Latest Version is installed
+              <ul>
+                <li class="list-inside list-disc ml-10">
+                  Remember the password given during MySQL installation (By
+                  default, Username: root)
+                </li>
+                <li class="list-inside list-disc ml-10">
+                  Server Name will be localhost or 127.0.0.1
+                </li>
+              </ul>
+            </li>
+            <li class="list-inside list-decimal">
+              Install the application using SLS Installer.
+            </li>
+            <li class="list-inside list-decimal">
+              Enter the SLS application's Username: admin and Password:
+              admin@123
+              <ul>
+                <li class="list-inside list-disc ml-10">
+                  Database Error gets generated for the first time users
+                </li>
+                <li class="list-inside list-disc ml-10">
+                  Click OK button of the Error Message Box
+                </li>
+              </ul>
+            </li>
+            <li class="list-inside list-decimal">
+              Database Details Collection Form will be displayed,
+              <ul>
+                <li class="list-inside list-disc ml-10">
+                  Enter the Server Name (localhost), User Name (root) and
+                  Password (Given during MySQL installation) of MySQL Server
+                </li>
+              </ul>
+            </li>
+            <li class="list-inside list-decimal">
+              Message Box with default Username and Password for SLS Application
+              will be displayed.
+            </li>
+            <li class="list-inside list-decimal">
+              Enter the login details and use the application.
+            </li>
+          </ol>
+        </section>
+      </section>
+      <section>
+        <h2 id="about" class="font-bold text-2xl">About</h2>
+        <p>
+          A mini-project CRUD application developed using .NET with
+          C#(WinForms). This application can be used to store the details of
+          books in library and manipulate them. It can search for a particular
+          book and also generate a PDF report of the books stored.
+        </p>
+      </section>
+      <section>
+        <form action="#" onsubmit="openMailTo()">
+          <fieldset class="flex flex-col gap-5">
+            <legend class="font-bold text-2xl">Leave a comment</legend>
+            <div class="mt-4">
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                required
+                id="name"
+                class="rounded-md bg-transparent border-2 border-gray-700 ml-6"
+              />
+            </div>
+            <div class="flex flex-wrap">
+              <label for="comment" class="mr-1">Comment: </label>
+              <textarea
+                name="comment"
+                id="comment"
+                required
+                cols="30"
+                rows="5"
+                class="rounded-md bg-transparent border-2 border-gray-700"
+              ></textarea>
+            </div>
+            <div class="ml-12">
+              <input
+                type="submit"
+                value="Comment"
+                class="rounded-md px-1 mr-16 bg-green-900 text-white cursor-pointer"
+              />
+              <input
+                type="reset"
+                value="Clear"
+                class="rounded-md px-2 bg-red-700 text-white cursor-pointer"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
