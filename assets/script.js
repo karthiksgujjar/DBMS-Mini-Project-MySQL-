@@ -29,6 +29,6 @@ function fadeIn(imageNumber) {
 
 function openMailTo(){
     const sendMailLink = document.createElement('a');
-    sendMailLink.href = `mailto:someone@gmail.com?&subject=Comment on SLS from ${document.getElementById('name').value} &body=${document.getElementById('comment').value}`;
+    sendMailLink.href = `mailto:gfgctumkur.pgms.bca6.2023@gmail.com?&subject=Comment on SLS from ${document.getElementById('name').value} &body=${document.getElementById('comment').value}`;
     sendMailLink.click();
 }

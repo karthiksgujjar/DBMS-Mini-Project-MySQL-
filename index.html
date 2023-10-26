@@ -30,27 +30,22 @@
 
   <body class="radial-blue-bg px-2 pt-2 font-mono h-screen">
     <header class="w-full flex items-center justify-between">
-      <img src="assets/Images/SLS Logo.png" alt="SLS Logo" class="w-12" />
-      <h1 class="font-extrabold text-base text-white sm:text-3xl">
+      <img src="assets/Images/SLS Logo.png" alt="SLS Logo" class="w-10 sm:w-12" />
+      <h1 class="font-extrabold text-[1.25rem] text-white sm:text-3xl">
         Simple Library Surfer
       </h1>
       <div class="flex flex-wrap sm:flex-nowrap gap-2 w-min justify-end">
-        <a href="#about" class="text-white rounded-md bg-black px-1">About</a>
-        <a
-          href="SLS Installer/Release/SLS Installer.msi"
-          download="SLS Setup.exe"
-          class="text-white rounded-md bg-black px-1"
-          >Download</a
-        >
+        <a href="#about" class=" rounded-md bg-blue-400 px-1">About</a>
+        
       </div>
     </header>
     <main class="flex flex-col gap-20 mt-6">
-      <section class="flex flex-wrap">
+      <section class="flex flex-wrap lg:flex-nowrap gap-4">
         <section
           id="screenshots-slider"
           class="flex flex-col justify-center items-center"
         >
-          <div class="w-11/12 lg:w-2/4 overflow-hidden rounded-lg">
+          <div class="w-11/12 lg:w-2/4 overflow-hidden rounded-lg shadow-md shadow-slate-600">
             <img src="assets/Images/Main Form.png" alt="SLS Main Form" />
             <img
               src="assets/Images/Insert Form.png"
@@ -97,67 +92,91 @@
             >
           </div>
         </section>
-        <section class="w-full">
+        <section class="min-w-max self-center mr-12">
           <p class="font-semibold">Pre-Requesites</p>
           <ul>
-            <li class="list-inside list-disc">MySQL Server 8.0.34</li>
+            <li class="list-inside list-disc ml-6  mb-10">MySQL Server 8.0.34</li>
           </ul>
-          <hr class="my-4 border-0 h-px bg-gray-600" />
-          <p class="font-semibold">How to use?</p>
+          
+          <p class="flex bg-blue-400 drop-shadow-2xl shadow-xl flex-col items-center w-max rounded-md ">
+            <img class="w-min" src="assets/Images/Windows Logo.png" alt="Windows Logo">
+            <a
+          href="SLS Installer/Release/SLS Installer.msi"
+          download="SLS Setup.exe"
+          class="px-1">Download for Windows</a>
+          </p>
+          
+        </section>
+      </section>
+      <section>
+        <p class="font-semibold">How to use?</p>
           <ol>
-            <li class="list-inside list-decimal">
-              Make sure 'MySQL Server' Latest Version is installed
+            <li class="list-inside list-decimal">Make sure 'MySQL Server' Latest Version is installed
               <ul>
-                <li class="list-inside list-disc ml-10">
-                  Remember the password given during MySQL installation (By
+                <li class="list-inside list-disc ml-10">Remember the password given during MySQL installation (By
                   default, Username: root)
                 </li>
-                <li class="list-inside list-disc ml-10">
-                  Server Name will be localhost or 127.0.0.1
+                <li class="list-inside list-disc ml-10">Server Name will be localhost or 127.0.0.1
                 </li>
               </ul>
             </li>
-            <li class="list-inside list-decimal">
-              Install the application using SLS Installer.
+            <li class="list-inside list-decimal">Install the application using SLS Installer.
             </li>
-            <li class="list-inside list-decimal">
-              Enter the SLS application's Username: admin and Password:
+            <li class="list-inside list-decimal">Enter the SLS application's Username: admin and Password:
               admin@123
               <ul>
-                <li class="list-inside list-disc ml-10">
-                  Database Error gets generated for the first time users
+                <li class="list-inside list-disc ml-10">Database Error gets generated for the first time users
                 </li>
-                <li class="list-inside list-disc ml-10">
-                  Click OK button of the Error Message Box
+                <li class="list-inside list-disc ml-10">Click OK button of the Error Message Box
                 </li>
               </ul>
             </li>
-            <li class="list-inside list-decimal">
-              Database Details Collection Form will be displayed,
+            <li class="list-inside list-decimal">Database Details Collection Form will be displayed,
               <ul>
-                <li class="list-inside list-disc ml-10">
-                  Enter the Server Name (localhost), User Name (root) and
+                <li class="list-inside list-disc ml-10">Enter the Server Name (localhost), User Name (root) and
                   Password (Given during MySQL installation) of MySQL Server
                 </li>
               </ul>
             </li>
-            <li class="list-inside list-decimal">
-              Message Box with default Username and Password for SLS Application
+            <li class="list-inside list-decimal">Message Box with default Username and Password for SLS Application
               will be displayed.
             </li>
-            <li class="list-inside list-decimal">
-              Enter the login details and use the application.
+            <li class="list-inside list-decimal">Enter the login details and use the application.
             </li>
           </ol>
-        </section>
       </section>
       <section>
         <h2 id="about" class="font-bold text-2xl">About</h2>
         <p>
-          A mini-project CRUD application developed using .NET with
-          C#(WinForms). This application can be used to store the details of
-          books in library and manipulate them. It can search for a particular
-          book and also generate a PDF report of the books stored.
+          A mini-project CRUD application developed using .NET with C#(WinForms). This application can be used to store the details of books in library and manipulate them. It can search for a particular book and also generate a PDF report of the books stored.
+        </p>
+        <p class="mt-8">
+          This application allows the Librarian to go through the Library Books data and it contains the following modules:
+        </p>
+        <p class="mt-4 font-bold mb-2">INSERT, DELETE, UPDATE AND VIEW</p>
+        <ul>
+          <li class="list-disc list-inside">INSERT module adds data in the Database,</li>
+          <li class="list-disc list-inside">DELETE module removes data from the Database, 
+          <ul>
+            <li class="list-circle list-inside ml-8">DELETE EVERYTHING option to delete all data.</li>
+          </ul>
+        </li>
+          <li class="list-disc list-inside">UPDATE module updates data in the Database and </li>
+          <li class="list-disc list-inside">VIEW module displays data in the Database.
+            <ul>
+              <li class="list-circle list-inside ml-8">Generate Report in PDF File.</li>
+              <li class="list-circle list-inside ml-8">Search for a particular Book.</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="mt-4">
+          This mini project is not Library Management System in itself, rather it displays details of the books in the library such as, 
+          <ul>
+            <li class="list-inside list-disc">Name of the Book,</li>
+            <li class="list-inside list-disc">Author of the Book,</li>
+            <li class="list-inside list-disc">ID of the Book.</li>
+          </ul>
+
         </p>
       </section>
       <section>

@@ -8,6 +8,10 @@
     background-attachment: fixed;
  }
 
+ .list-circle{
+    list-style: circle;
+ }
+
 @keyframes fadeIn {  
     from {  
         opacity:0;  
