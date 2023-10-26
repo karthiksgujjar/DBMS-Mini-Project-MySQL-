@@ -768,6 +768,14 @@ video {
   font-size: 1.3rem;
 }
 
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
+}
+
+.text-\[1\.35rem\] {
+  font-size: 1.35rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
