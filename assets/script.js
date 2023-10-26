@@ -3,28 +3,21 @@ const images = slider.firstElementChild.children;
 const imageBubbles = slider.lastElementChild.children;
 let imageNumber = 0;
 
-    fadeOut(imageNumber);
+setInterval(() =>{
+    images[imageNumber].setAttribute("hidden", true);
+    imageBubbles[imageNumber].innerHTML = '&bullet;';
+    showImage((imageNumber != 4)?++imageNumber:imageNumber=0);
+    // if (imageNumber != 4){
+    //     showImage(++imageNumber); 
+    // }
+    // else
+    //     showImage(imageNumber = 0); // It is needed to assign imageNumber with 0 here, because the imageNumber which is global doesn't get updated otherwise like if we send showImage(0) and it'll break the flow of transistioning of the image.
+},3000);
 
-function fadeOut(imageNumber) {
-    imageBubbles[imageNumber].innerHTML = '&bigodot;';
-    setTimeout(() => {
-        images[imageNumber].setAttribute("hidden", true);
-        imageBubbles[imageNumber].innerHTML = '&bullet;';
-        if (imageNumber != 4)
-            fadeIn(imageNumber + 1);
-        else
-            fadeIn(0);
-    }, 2000);
-
-}
-
-function fadeIn(imageNumber) {
+function showImage(imageNumber){
     images[imageNumber].removeAttribute("hidden");
-    images[imageNumber].style = "animation: fadeIn 1s ease-in-out;";
-    imageBubbles[imageNumber].innerHTML = '&bigodot;';
-    setTimeout(() => {
-        fadeOut(imageNumber);
-    },2000)
+        imageBubbles[imageNumber].innerHTML = '&bigodot;';
+        images[imageNumber].style = "animation: fadeIn 1s ease-in-out;";
 }
 
 function openMailTo(){

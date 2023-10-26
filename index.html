@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -21,8 +21,8 @@
 
 <body class="bg-radial-blue bg-no-repeat bg-fixed px-2 pt-2 font-robotoSlab h-screen">
   <header class="w-full flex items-center justify-between">
-    <img src="assets/Images/SLS Logo.png" alt="SLS Logo" class="w-10 sm:w-12" />
-    <h1 class="font-extrabold text-[1.2rem] text-white sm:text-3xl">
+    <img src="assets/Images/SLS Logo.webp" alt="SLS Logo" class="w-10 sm:w-12" />
+    <h1 class="font-extrabold text-[1.3rem] text-white sm:text-3xl">
       Simple Library Surfer
     </h1>
     <div class="flex flex-wrap sm:flex-nowrap gap-2 w-min justify-end">
@@ -34,18 +34,18 @@
     <section class="flex flex-wrap lg:flex-nowrap gap-4">
       <section id="screenshots-slider" class="flex flex-col justify-center items-center">
         <div class="w-11/12 lg:w-2/4 overflow-hidden rounded-lg shadow-md shadow-slate-600">
-          <img src="assets/Images/Main Form.png" alt="SLS Main Form" />
-          <img src="assets/Images/Insert Form.png" alt="SLS Insert Form" hidden />
-          <img src="assets/Images/Delete Form.png" alt="SLS Delete Form" hidden />
-          <img src="assets/Images/Update Form.png" alt="SLS Update Form" hidden />
-          <img src="assets/Images/View Form.png" alt="SLS View Form" hidden />
+          <img src="assets/Images/Main Form.webp" alt="SLS Main Form" />
+          <img src="assets/Images/Insert Form.webp" alt="SLS Insert Form" hidden />
+          <img src="assets/Images/Delete Form.webp" alt="SLS Delete Form" hidden />
+          <img src="assets/Images/Update Form.webp" alt="SLS Update Form" hidden />
+          <img src="assets/Images/View Form.webp" alt="SLS View Form" hidden />
         </div>
         <div>
-          <span class="font-extrabold text-2xl cursor-pointer" onclick="slideIn(0)">&bullet;</span>
-          <span class="font-extrabold text-2xl cursor-pointer" onclick="slideIn(1) ">&bullet;</span>
-          <span class="font-extrabold text-2xl cursor-pointer" onclick="slideIn(2) ">&bullet;</span>
-          <span class="font-extrabold text-2xl cursor-pointer" onclick="slideIn(3) ">&bullet;</span>
-          <span class="font-extrabold text-2xl cursor-pointer" onclick="slideIn(4) ">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bigodot;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
         </div>
       </section>
       <section class="min-w-max self-center mr-12">
@@ -142,12 +142,12 @@
         <fieldset class="flex flex-col gap-5">
           <legend class="font-extrabold text-2xl">Leave a comment</legend>
           <div class="mt-4">
-            <label for="name">Name: </label>
+            <label for="name"><span class="text-red-600">*</span> Name:</label>
             <input type="text" name="name" required id="name"
-              class="rounded-md bg-transparent border-2 border-gray-700 ml-6" />
+              class="rounded-md bg-transparent border-2 border-gray-700 ml-7" />
           </div>
           <div class="flex flex-wrap">
-            <label for="comment" class="mr-1">Comment: </label>
+            <label for="comment" class="mr-1"><span class="text-red-600">*</span> Comment:</label>
             <textarea name="comment" id="comment" required cols="30" rows="5"
               class="rounded-md bg-transparent border-2 border-gray-700"></textarea>
           </div>
