@@ -725,6 +725,14 @@ video {
   background-color: transparent;
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -739,8 +747,8 @@ video {
   padding-top: 0.5rem;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-robotoSlab {
+  font-family: Roboto Slab, serif;
 }
 
 .text-2xl {
@@ -748,8 +756,16 @@ video {
   line-height: 2rem;
 }
 
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
+
 .text-\[1\.25rem\] {
   font-size: 1.25rem;
+}
+
+.text-\[1\.3rem\] {
+  font-size: 1.3rem;
 }
 
 .font-bold {
@@ -758,10 +774,6 @@ video {
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .text-white {
@@ -791,10 +803,8 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.radial-blue-bg{
+.bg-radial-blue{
   background-image: radial-gradient(lightblue,skyblue);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .list-circle{

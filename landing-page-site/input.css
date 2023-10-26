@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.radial-blue-bg{
+.bg-radial-blue{
     background-image: radial-gradient(lightblue,skyblue);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
  }
 
  .list-circle{
     list-style: circle;
  }
+
 
 @keyframes fadeIn {  
     from {  
