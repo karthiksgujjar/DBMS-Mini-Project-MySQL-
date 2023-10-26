@@ -764,12 +764,16 @@ video {
   line-height: 2rem;
 }
 
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
+}
+
 .text-\[1\.3rem\] {
   font-size: 1.3rem;
 }
 
-.text-\[1\.4rem\] {
-  font-size: 1.4rem;
+.text-\[1\.1rem\] {
+  font-size: 1.1rem;
 }
 
 .text-\[1\.35rem\] {
